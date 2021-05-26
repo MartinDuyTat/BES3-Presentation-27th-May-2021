@@ -93,7 +93,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{$K\pi$ backgrounds}
+\begin{frame}{$K_SKK$ vs $K\pi$ backgrounds}
   \begin{itemize}
     \item{Total data yield: $321.5$}
     \item{Scale with MC luminosity: $6912.3$}
@@ -116,7 +116,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{$K\pi\pi^0$ backgrounds}
+\begin{frame}{$K_SKK$ vs $K\pi\pi^0$ backgrounds}
   \begin{itemize}
     \item{Total data yield: $584.5$}
     \item{Scale with MC luminosity: $12742.1$}
@@ -128,18 +128,18 @@
     Background                    & Total  & Bin $1$ & Bin $2$ & Bin $-1$ & Bin $-2$ \\
     \hline
     $K_SKK\to KK\pi\pi$           & $16$   & $9$     & $1$     & $5$      & $1$ \\
-    $K\pi\to K\mu\nu_\mu$         & $8$    & $1$     & $2$     & $2$      & $3$ \\
+    $K\pi\pi^0\to K\mu\nu_\mu$    & $8$    & $1$     & $2$     & $2$      & $3$ \\
     $K_SKK\to K_LKK$              & $8$    & $2$     & $0$     & $6$      & $0$ \\
     $K\pi\pi^0\to K\pi\pi^0\pi^0$ & $6$    & $2$     & $2$     & $1$      & $1$ \\
-    $K\pi\to KK$                  & $4$    & $0$     & $3$     & $0$      & $1$ \\
-    $K\pi\to Ke\nu_e$             & $3$    & $0$     & $2$     & $0$      & $1$ \\
+    $K\pi\pi^0\to KK$             & $4$    & $0$     & $3$     & $0$      & $1$ \\
+    $K\pi\pi^0\to Ke\nu_e$        & $3$    & $0$     & $2$     & $0$      & $1$ \\
     Other                         & $14$   & $0$     & $11$    & $0$      & $3$ \\
     \hline
   \end{tabular}
   \vspace{0.5cm}
 \end{frame}
 
-\begin{frame}{$K\pi\pi\pi$ backgrounds}
+\begin{frame}{$K_SKK$ vs $K\pi\pi\pi$ backgrounds}
   \begin{itemize}
     \item{Total data yield: $399.6$}
     \item{Scale with MC luminosity: $8711.3$}
@@ -148,16 +148,95 @@
   \centering
   \def\arraystretch{1.2}%
   \begin{tabular}{c|ccccc}
-    Background                      & Total  & Bin $1$ & Bin $2$ & Bin $-1$ & Bin $-2$ \\
+    Background                    & Total  & Bin $1$ & Bin $2$ & Bin $-1$ & Bin $-2$ \\
     \hline
-    $K\pi\pi\pi\to K_SK^+\pi^-$     & $43$   & $3$     & $21$    & $1$      & $18$ \\
-    $K_SKK\to K_LKK$                & $9$    & $1$     & $0$     & $8$      & $0$ \\
-    $K_SKK\to KK\pi\pi$             & $9$    & $4$     & $1$     & $3$      & $1$ \\
-    $K\pi\pi\pi\to K\pi\pi^0\pi\pi$ & $6$    & $0$     & $1$     & $2$      & $3$ \\
-    Other                           & $13$   & $2$     & $5$     & $2$      & $4$ \\
+    $K\pi\pi\pi\to K_SK^+\pi^-$   & $43$   & $3$     & $21$    & $1$      & $18$ \\
+    $K_SKK\to K_LKK$              & $9$    & $1$     & $0$     & $8$      & $0$ \\
+    $K_SKK\to KK\pi\pi$           & $9$    & $4$     & $1$     & $3$      & $1$ \\
+    $K\pi\pi\pi\to K\pi\pi^0$     & $6$    & $0$     & $1$     & $2$      & $3$ \\
+    Other                         & $13$   & $2$     & $5$     & $2$      & $4$ \\
     \hline
   \end{tabular}
   \vspace{0.5cm}
+\end{frame}
+
+\begin{frame}{Partially reconstructed double tags}
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item{$K_LKK$ vs $K\pi$, $K\pi\pi^0$, $K\pi\pi\pi$}
+    \item{More peaking backgrounds}
+    \item{More sophisticated sideband subtraction (from $K_SKK$ MEMO):}
+    \item{S: Signal region, L: Lower sideband, H: Upper sideband}
+  \end{itemize}
+  \begin{equation*}
+    Y_S = \frac{(N_S - N_S^P) - \delta(N_L - N_L^P) - \gamma(N_H - N_H^P)}{1 - \delta\alpha - \gamma\beta}
+  \end{equation*}
+  \begin{equation*}
+    \delta, \gamma = \frac{\text{Flat background in S}}{\text{Flat background in L, H}}, \quad \alpha, \beta = \frac{\text{Signal in S}}{\text{Signal in L, H}}
+  \end{equation*}
+  \begin{itemize}
+    \item{General question: Can the inclusive MC backgrounds in each yield be trusted?}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{$K_SKK$ vs $Ke\nu$ peaking backgrounds}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KSKKVersusKeNuPeaking.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KSKKVersusKeNuPeaking2.png}
+    \end{subfigure}
+    \caption{$U_\text{miss}$ for $K_SKK$ vs $Ke\nu$}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{$K_LKK$ vs $K\pi$ peaking backgrounds}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpiPeaking.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpiPeaking2.png}
+    \end{subfigure}
+    \caption{$M^2_\text{miss}$ for $K_LKK$ vs $K\pi$}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{$K_LKK$ vs $K\pi\pi^0$ peaking backgrounds}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpipi0Peaking.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpipi0Peaking2.png}
+    \end{subfigure}
+    \caption{$M^2_\text{miss}$ for $K_LKK$ vs $K\pi\pi^0$}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{$K_LKK$ vs $K\pi\pi\pi$ peaking backgrounds}
+  \begin{figure}
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpipipiPeaking.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{KLKKVersusKpipipiPeaking2.png}
+    \end{subfigure}
+    \caption{$M^2_\text{miss}$ for $K_LKK$ vs $K\pi\pi\pi$}
+  \end{figure}
 \end{frame}
 
 \section{Next steps}
